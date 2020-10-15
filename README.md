@@ -2,13 +2,15 @@
 
 This package is a simple implementation of the beautiful ["Icons Font Awesome"](https://fontawesome.com/icons) For Xamarin.Forms [*(Screenshot)*](https://raw.githubusercontent.com/dimonovdd/Xamarin.Forms.FontAwesome/main/SampleImages/sample.jpg)
 
+Based on [IconFontHelper](https://github.com/dimonovdd/Xamarin.Forms.IconFontHelper) [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.IconFontHelper?style=plastic)](https://www.nuget.org/packages/Xamarin.Forms.IconFontHelper/)
+
+This package is divided into three nugets, so you don't install fonts that you don't use
 | Font    | Nuget         |
 |:--------|:-------------:|
 | Solid   | [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.FontAwesome.Solid?style=plastic)](https://www.nuget.org/packages/Xamarin.Forms.FontAwesome.Solid/)    |
 | Regular | [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.FontAwesome.Regular?style=plastic)](https://www.nuget.org/packages/Xamarin.Forms.FontAwesome.Regular/)|
 | Brand   | [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.FontAwesome.Brand?style=plastic)](https://www.nuget.org/packages/Xamarin.Forms.FontAwesome.Brand/)    | 
 
-This package is divided into three nugets, so you don't install fonts that you don't use
 
 Icon naming differs from icons8 according to the C# language rules.
 
