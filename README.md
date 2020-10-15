@@ -14,7 +14,7 @@ This package is divided into three nugets, so you don't install fonts that you d
 
 Icon naming differs from icons8 according to the C# language rules.
 
-| icons8         | icons8 HTML       | this project  |
+| FontAwesome    | FontAwesome  HTML | this project  |
 |:--------------:|:-----------------:|:-------------:|
 |dog             |fa-dog             |Dog            |
 |question-circle |fa-question-circle |QuestionCircle |
