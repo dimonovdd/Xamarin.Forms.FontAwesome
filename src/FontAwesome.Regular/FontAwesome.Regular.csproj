@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>FontAwesome.Regular</AssemblyName>
+    <RootNamespace>FontAwesomeRegular</RootNamespace>
+    <Authors>dimonovdd</Authors>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>Implementation Font Awesome Free For Xamarin.Forms
+https://fontawesome.com/icons/</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/dimonovdd/Xamarin.Forms.FontAwesome</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dimonovdd/Xamarin.Forms.FontAwesome</RepositoryUrl>
+    <PackageTags>Xamarin.Forms, Icon, IconFont, FontAwesome</PackageTags>
+    <Version>1.0.0.0</Version>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageId>Xamarin.Forms.FontAwesomeRegular</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>D:\source\repos\Xamarin.Forms.FontAwesome\src\FontAwesome.Regular\FontAwesome.Regular.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FontAwesome\fa-regular-400.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="FontAwesome\fa-regular-400.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Forms.IconFontHelper" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

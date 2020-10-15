@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helper="clr-namespace:IconFontHelper;assembly=IconFontHelper"
+             xmlns:iconsB="clr-namespace:FontAwesome.Brand;assembly=FontAwesome.Brand"
+             xmlns:iconsS="clr-namespace:FontAwesome.Solid;assembly=FontAwesome.Solid"
+             xmlns:iconsR="clr-namespace:FontAwesome.Regular;assembly=FontAwesome.Regular"
+             x:Class="FontAwesome.Sample.MainPage"
+             BackgroundColor="White">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <helper:IconToStringConverter x:Key="iconConv" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image.Source>
+                    <iconsS:IconSource Icon="Heart" Size="100" />
+                </Image.Source>
+            </Image>
+
+            <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image.Source>
+                    <iconsR:IconSource Icon="Heart" Color="Red" Size="100"/>
+                </Image.Source>
+            </Image>
+
+            <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image.Source>
+                    <iconsB:IconSource Icon="Github" Size="100"/>
+                </Image.Source>
+            </Image>
+
+            <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image.Source>
+                    <FontImageSource 
+                        Glyph="{Binding Source={x:Static iconsB:Icon.Git}, Converter={StaticResource iconConv}}"
+                        FontFamily="{x:Static iconsB:IconInfo.font}" Color="Blue" Size="100"/>
+                </Image.Source>
+            </Image>
+
+            <Label Margin="15" HorizontalOptions="Center" VerticalOptions="Center" FontSize="100" TextColor="Green"
+                Text="{Binding Source={x:Static iconsR:Icon.Smile}, Converter={StaticResource iconConv}}" 
+                FontFamily="{x:Static iconsR:IconInfo.font}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
