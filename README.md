@@ -16,9 +16,9 @@ Icon naming differs from icons8 according to the C# language rules.
 
 | FontAwesome    | FontAwesome  HTML | this project  |
 |:--------------:|:-----------------:|:-------------:|
-|dog             |fa-dog             |Dog            |
-|question-circle |fa-question-circle |QuestionCircle |
-|500px           |fa-500px           |_500x          |
+|[dog](https://fontawesome.com/icons/dog?style=solid)                         |fa-dog             |Dog            |
+|[question-circle](https://fontawesome.com/icons/question-circle?style=solid) |fa-question-circle |QuestionCircle |
+|[500px](https://fontawesome.com/icons/500px?style=brands)                    |fa-500px           |_500x          |
 
 #### Littel Sample:
 ```xml
