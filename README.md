@@ -1,4 +1,6 @@
-# Xamarin.Forms.FontAwesome <img src="/icon.png" width="45" height="40"/>
+# Xamarin.Forms.FontAwesome 
+
+![header](/header.svg)
 
 This package is a simple implementation of the beautiful ["Icons Font Awesome"](https://fontawesome.com/icons) For Xamarin.Forms [*(Screenshot)*](https://raw.githubusercontent.com/dimonovdd/Xamarin.Forms.FontAwesome/main/SampleImages/sample.jpg)
 
